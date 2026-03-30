@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeFix Appliance Care - Professional Repair Services in Delhi & Noida</title>
+    <meta name="description" content="Reliable doorstep appliance repair services in Delhi and Noida. We specialize in refrigerators, washing machines, microwaves, and deep freezers. Same-day repair by expert technicians.">
+    <meta name="keywords" content="appliance repair delhi, fridge repair noida, washing machine service, microwave repair, HomeFix Appliance Care">
+    <link rel="canonical" href="https://delhiexpertrepairservices.com">
+    
+    <!-- JSON-LD Structured Data for Local Business SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "HomeFix Appliance Care",
+      "image": "h1.jpg",
+      "@id": "https://delhiexpertrepairservices.com",
+      "url": "https://delhiexpertrepairservices.com",
+      "telephone": "+918585931010",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "G866 office no 6 2nd floor Noida",
+        "addressLocality": "Delhi",
+        "postalCode": "110042",
+        "addressCountry": "IN"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2f6fed;
+            --primary-dark: #1e56c9;
+            --text-dark: #2d3436;
+            --text-light: #636e72;
+            --white: #ffffff;
+            --bg-light: #f8f9fa;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s ease;
+            --border-radius: 10px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Reusable Components */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: var(--primary-color);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            font-weight: 500;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(47, 111, 237, 0.3);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        /* Navigation */
+        nav {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo img {
+            height: 120px;
+            width: auto;
+        }
+
+        .nav-links a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            min-height: calc(100vh - 80px);
+            background: linear-gradient(rgba(248, 249, 250, 0.85), rgba(248, 249, 250, 0.85)), url('hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-size: 3.5rem;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: var(--text-dark);
+        }
+
+        .hero-text p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 30px;
+        }
+
+        .hero-image {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 10;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .hero-slider {
+            width: 100%;
+            height: 100%;
+        }
+
+        .hero-slider img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .hero-slider img.active {
+            opacity: 1;
+        }
+
+        .slider-dots {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 10;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .dot.active {
+            background: var(--white);
+            transform: scale(1.2);
+        }
+
+        /* Feature Section */
+        .features {
+            background: var(--white);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .feature-card {
+            padding: 30px;
+            background: var(--white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-card i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        /* Alternating Sections */
+        .alt-section {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .alt-section.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .alt-image, .alt-content {
+            flex: 1;
+        }
+
+        .alt-image img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+        }
+
+        .alt-content ul {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .alt-content li {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .alt-content li i {
+            color: var(--primary-color);
+            margin-top: 5px;
+        }
+
+        /* Stats Section */
+        .stats {
+            background: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .stat-item h2 {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+        }
+
+        /* Floating Call Button */
+        .floating-call {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--primary-color);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            z-index: 9999;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .floating-call:hover {
+            transform: scale(1.1);
+            background: var(--primary-dark);
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .service-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .service-info {
+            padding: 25px;
+        }
+
+        .service-info h3 {
+            margin-bottom: 10px;
+        }
+
+        .service-info p {
+            color: var(--text-light);
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+
+        /* Brands Section */
+        .brands-section {
+            padding: 80px 0;
+            background-color: var(--white);
+            animation: fadeInSection 1.2s ease-out;
+        }
+
+        @keyframes fadeInSection {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .brands-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .brands-header p {
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .brands-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .brand-card {
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            min-height: 180px;
+            overflow: hidden;
+        }
+
+        .brand-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .brand-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .brand-logo-group {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            width: 100%;
+        }
+
+        .brand-logo-group img {
+            max-height: 30px;
+            width: auto;
+        }
+
+        /* Testimonials */
+        .testimonial-box {
+            background: var(--bg-light);
+            padding: 40px;
+            border-radius: var(--border-radius);
+            text-align: center;
+            max-width: 800px;
+            margin: 40px auto 0;
+        }
+
+        .testimonial-box i {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background-color: var(--bg-light);
+            padding: 80px 0;
+            animation: fadeInSection 1.2s ease-out;
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .contact-header h2 {
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .contact-header p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .contact-card {
+            background-color: #f5f5f5;
+            padding: 40px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: var(--transition);
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-card i {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .contact-card h3 {
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .contact-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* Contact Form Styles */
+        .contact-form-container {
+            max-width: 800px;
+            margin: 60px auto 0;
+            background: var(--white);
+            padding: 40px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #e1e1e1;
+            border-radius: 5px;
+            font-family: inherit;
+            transition: var(--transition);
+        }
+
+        .form-input:focus {
+            border-color: var(--primary-color);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(47, 111, 237, 0.1);
+        }
+
+        textarea.form-input {
+            height: 150px;
+            resize: none;
+        }
+
+        /* Bottom CTA */
+        .bottom-cta {
+            background: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: #ccc;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 50px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h3 {
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            display: block;
+            color: #ccc;
+            text-decoration: none;
+            margin-bottom: 10px;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover { color: var(--primary-color); }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero-grid, .alt-section, .alt-section.reverse {
+                grid-template-columns: 1fr;
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero-text h1 { font-size: 2.5rem; }
+            .feature-grid, .stats-grid, .brands-grid, .contact-grid, .form-row { grid-template-columns: repeat(2, 1fr); }
+            .footer-grid { grid-template-columns: 1fr; }
+            .inquiry-form-container {
+                max-width: 90%;
+                margin: 40px auto;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .feature-grid, .stats-grid, .brands-grid, .contact-grid, .form-row { grid-template-columns: 1fr; }
+            .nav-links { display: none; }
+            .inquiry-form-container {
+                max-width: 95%;
+                padding: 25px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-text h1 { font-size: 2rem; }
+            .section-title { font-size: 1.8rem; }
+            .hero-text p { font-size: 1rem; }
+            .stat-item h2 { font-size: 2rem; }
+            .contact-form-container { padding: 20px; }
+            .inquiry-form-container .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Inquiry Form Specific Styles */
+        .inquiry-section {
+            background-color: var(--bg-light);
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .inquiry-section .section-title {
+            margin-bottom: 10px;
+        }
+
+        .inquiry-section p {
+            color: var(--text-light);
+            margin-bottom: 30px;
+            font-size: 1rem;
+        }
+
+        .inquiry-form-container {
+            max-width: 500px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            text-align: left; /* Align form elements to the left within the container */
+        }
+
+        .inquiry-form-container .form-group {
+            margin-bottom: 15px;
+        }
+
+        .inquiry-form-container .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="container nav-content">
+            <div class="logo">
+                <img src="ChatGPT Image Mar 30, 2026, 03_33_37 PM.png" alt="HomeFix Appliance Care Logo">
+                
+            </div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#services">Services</a>
+                <a href="tel:+918585931010" class="btn"><i class="fas fa-phone-alt"></i> Call Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        
+                <div class="hero-slider">
+                    <img src="new s.webp" alt="Expert AC Repair Service" class="active" loading="eager">
+                    <img src="a2.jpg" alt="Refrigerator Maintenance" loading="lazy">
+                    <img src="h3.webp" alt="Professional Technician at Work" loading="lazy">
+                </div>
+                <div class="slider-dots">
+                    <div class="dot active" onclick="showSlide(0)"></div>
+                    <div class="dot" onclick="showSlide(1)"></div>
+                    <div class="dot" onclick="showSlide(2)"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inquiry Form Section -->
+    <section class="inquiry-section">
+        <div class="container">
+            <h2 class="section-title"></h2>
+            
+            <div class="inquiry-form-container">
+                <form action="#">
+                    <div class="form-group">
+                        <input type="text" id="inquiry-name" class="form-input" placeholder="Your Name" required aria-label="Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="inquiry-phone" class="form-input" placeholder="Phone Number" required aria-label="Phone">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="inquiry-service" class="form-input" placeholder="Service Needed (e.g. Fridge Repair)" required aria-label="Service">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="inquiry-message" class="form-input" style="height: 100px;" placeholder="Briefly describe the issue..." required aria-label="Message"></textarea>
+                    </div>
+                    <div style="text-align: center;">
+                        <button type="submit" class="btn" style="width: 100%;">Send Request</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Section -->
+    <section class="features">
+        <div class="container">
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Reliable & Fast</h3>
+                    <p>Quick service with same-day repair availability.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-tags"></i>
+                    <h3>Transparent Pricing</h3>
+                    <p>No hidden charges. Pay only what you see.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-user-check"></i>
+                    <h3>Expert Technicians</h3>
+                    <p>Certified and experienced professionals.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Warranty Service</h3>
+                    <p>100% service warranty on repairs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Refrigerator Section -->
+    <section class="bg-light">
+        <div class="container alt-section">
+            <div class="alt-image">
+                <img src="h2.jpg" alt="Professional refrigerator maintenance service at home" loading="lazy">
+            </div>
+            <div class="alt-content">
+                <h2 class="section-title">Convenient Door-Step Fridge Repair</h2>
+                <p>Keep your refrigerator running smoothly with our expert repair services. Our trained technicians handle all brands and models, ensuring quick diagnosis and reliable solutions. We provide doorstep service with genuine spare parts and warranty support.</p>
+                <br>
+                <a href="#contact" class="btn">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Guarantee Section -->
+    <section>
+        <div class="container alt-section reverse">
+            <div class="alt-image">
+                <img src="h3.webp" alt="Certified technician providing upfront repair estimate" loading="lazy">
+            </div>
+            <div class="alt-content">
+                <h2 class="section-title">Transparent Pricing & Upfront Guarantee</h2>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> <div><strong>Commitment to Reliable Service</strong><br>We ensure high-quality service and customer satisfaction.</div></li>
+                    <li><i class="fas fa-check-circle"></i> <div><strong>Expert Technicians at Your Doorstep</strong><br>Our professionals arrive on time and fix issues efficiently.</div></li>
+                    <li><i class="fas fa-check-circle"></i> <div><strong>Transparent Pricing & Customer Satisfaction</strong><br>No surprises — clear pricing before work begins.</div></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container stats-grid">
+            <div class="stat-item"><h2>10+</h2><p>Years of Expertise</p></div>
+            <div class="stat-item"><h2>2,500+</h2><p>Happy Customers</p></div>
+            <div class="stat-item"><h2>50+</h2><p>Expert Technicians</p></div>
+            <div class="stat-item"><h2>100%</h2><p>Service Warranty</p></div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title" style="text-align:center">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="a1.jpg" alt="Refrigerator Repair Service" loading="lazy">
+                    <div class="service-info">
+                        <h3>Refrigerator Repair</h3>
+                        <p>Expert cooling repair services for all brands.</p>
+                        <a href="tel:+918585931010" class="btn"><i class="fas fa-phone-alt"></i> Call Now</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="a2.jpg" alt="Washing Machine Repair Service" loading="lazy">
+                    <div class="service-info">
+                        <h3>Washing Machine Repair</h3>
+                        <p>Fixing front load & top load machines.</p>
+                        <a href="tel:+918585931010" class="btn"><i class="fas fa-phone-alt"></i> Call Now</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="a3.jpg" alt="Microwave Oven Repair Service" loading="lazy">
+                    <div class="service-info">
+                        <h3>Microwave Repair</h3>
+                        <p>Quick microwave servicing and maintenance.</p>
+                        <a href="tel:+918585931010" class="btn"><i class="fas fa-phone-alt"></i> Call Now</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="a4.jpg" alt="Deep Freezer Repair Service" loading="lazy">
+                    <div class="service-info">
+                        <h3>Deep Freezer Repair</h3>
+                        <p>Professional freezer repair solutions.</p>
+                        <a href="tel:+918585931010" class="btn"><i class="fas fa-phone-alt"></i> Call Now</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="a5.jpg" alt="Side by Side Refrigerator Repair" loading="lazy">
+                    <div class="service-info">
+                        <h3>Side by Side Fridge Repair</h3>
+                        <p>Specialized service for modern refrigerators.</p>
+                        <a href="tel:+918585931010" class="btn"><i class="fas fa-phone-alt"></i> Call Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="brands-section">
+        <div class="container">
+            <div class="brands-header">
+                <h2 class="section-title">Trusted Brands We Service</h2>
+                <p>We repair and service all major appliance brands with genuine parts and expert care.</p>
+            </div>
+            <div class="brands-grid">
+                <!-- Card 1: Grouped Logos -->
+                <div class="brand-card">
+                    <img src="b1.jpeg" alt="Major appliance brands we service" loading="lazy">
+                </div>
+                <!-- Card 2: LG -->
+                <div class="brand-card">
+                    <img src="k2.png" alt="LG Appliance Repair" loading="lazy">
+                </div>
+                <!-- Card 3: Samsung -->
+                <div class="brand-card">
+                    <img src="k.png" alt="Samsung Appliance Repair" loading="lazy">
+                </div>
+                <!-- Card 4: Whirlpool -->
+                <div class="brand-card">
+                    <img src="b4.jpeg" alt="Whirlpool Appliance Repair" loading="lazy">
+                </div>
+                <!-- Card 5: Godrej -->
+                <div class="brand-card">
+                    <img src="b5.jpeg" alt="Godrej Appliance Repair" loading="lazy">
+                </div>
+                <!-- Card 6: IFB -->
+                <div class="brand-card">
+                    <img src="b6.jpg" alt="IFB Appliance Repair" loading="lazy">
+                </div>
+                <!-- Card 7: Haier -->
+                <div class="brand-card">
+                    <img src="b7.avif" alt="Haier Appliance Repair" loading="lazy">
+                </div>
+                <!-- Card 8: Voltas -->
+                <div class="brand-card">
+                    <img src="b8.jpg" alt="Voltas Appliance Repair" loading="lazy">
+                </div>
+                <!-- Card 9: Daikin -->
+                <div class="brand-card">
+                    <img src="b9.png" alt="Daikin Appliance Repair" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section>
+        <div class="container" style="text-align: center;">
+            <h2 class="section-title">Customer Testimonials</h2>
+            <p>We are committed to delivering the best appliance repair service with customer satisfaction as our top priority.</p>
+            <div class="testimonial-box">
+                <i class="fas fa-quote-left"></i>
+                <p>"Excellent service! Technician arrived on time and fixed my fridge within an hour. Highly recommended!"</p>
+                <h4 style="margin-top:20px;">- Happy Customer</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Happy Services Section -->
+    <section class="bg-light">
+        <div class="container alt-section">
+            <div class="alt-image">
+                <img src="b10.jpg" alt="Technician ensuring customer satisfaction with microwave repair" loading="lazy">
+            </div>
+            <div class="alt-content">
+                <h2 class="section-title">Happy Services, Happy You!</h2>
+                <p>We aim to provide hassle-free appliance repair services with professionalism and care. Our trained experts ensure your appliances run smoothly and efficiently.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <div class="bottom-cta">
+        <div class="container">
+            <h2 class="section-title">Air Conditioner or Furnace — What Does Your Home Need?</h2>
+            <a href="#contact" class="btn" style="background: white; color: var(--primary-color);">Get Started Now</a>
+        </div>
+    </div>
+
+    <!-- Contact Cards Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-header">
+                <h2 class="section-title">Get in touch</h2>
+                <p>Get in touch for professional help and speedy service.</p>
+            </div>
+            <div class="contact-grid">
+                <!-- Address Card -->
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Address</h3>
+                    <p>G866 office no 6 2nd floor Noida <br> City : Delhi</p>
+                </div>
+                <!-- Phone Card -->
+                <a href="tel:+918585931010" class="contact-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Phone</h3>
+                    <p>+91 8585931010</p>
+                </a>
+                <!-- Email Card -->
+                <a href="mailto:info@delhiexpertrepairservices.com" class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>info@delhiexpertrepairservices.com</p>
+                </a>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-container">
+                <form action="#">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="form-input" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-input" placeholder="Email Address" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-input" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Service Needed</label>
+                            <input type="text" id="subject" class="form-input" placeholder="e.g. Fridge Repair" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-input" placeholder="Describe your issue..." required></textarea>
+                    </div>
+                    <div style="text-align: center;">
+                        <button type="submit" class="btn">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>HomeFix Appliance Care</h3>
+                <p>Professional appliance repair services in Delhi. We specialize in all major home appliance brands with a focus on quality and customer satisfaction.</p>
+            </div>
+            <div class="footer-col footer-links">
+                <h3>Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="#services">Services</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <p>Owner: Rahul Raj Gupta</p>
+                <p>Address: G866 office no 6 2nd floor Noida, Delhi</p>
+                <p>Phone: +91 8585931010</p>
+                <p>Email: info@delhiexpertrepairservices.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 HomeFix Appliance Care. All Rights Reserved.</p>
+            <p>UDYAM-UP-50-0266124</p>
+        </div>
+    </footer>
+
+    <!-- Floating Call Button -->
+    <a href="tel:+918585931010" class="floating-call" title="Call Us Now" aria-label="Call HomeFix Support">
+        <i class="fas fa-phone-alt"></i>
+    </a>
+
+    <script>
+        const slides = document.querySelectorAll('.hero-slider img');
+        const dots = document.querySelectorAll('.dot');
+        let currentSlide = 0;
+
+        window.showSlide = function(index) {
+            slides[currentSlide].classList.remove('active');
+            dots[currentSlide].classList.remove('active');
+            currentSlide = index;
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        };
+
+        function nextSlide() {
+            let index = (currentSlide + 1) % slides.length;
+            showSlide(index);
+        }
+
+        setInterval(nextSlide, 5000);
+    </script>
+
+</body>
+</html>
